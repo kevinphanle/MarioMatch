@@ -1,6 +1,6 @@
-# GemQuest
+# Mario Match
 
-GemQuest is a Bejeweled inspired game.
+Mario Match is a Bejeweled inspired game.
 
 ## MVP
 
