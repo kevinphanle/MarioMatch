@@ -1,6 +1,6 @@
 # Mario Match
 
-Mario Match is a Bejeweled inspired game.
+Mario Match is a Bejeweled inspired game. Play it [here](https://kevinphanle.github.io/MarioMatch/).
 
 ## Technologies
 
