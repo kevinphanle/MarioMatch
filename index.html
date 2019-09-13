@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>GemQuest</title>
 </head>
-<body>
-    <div class="game" onload="pressStart.play()">
+<body onload="setBgImg()">
+    <div class="game" >
         <h1 id="title"><img src="images/title.png" alt="super-mario-font" border="0"></h1>
 
         <div class="options">
@@ -40,7 +40,8 @@
 
         <canvas id="gemquest" width="600" height="700"></canvas>
     
-        <!-- <img id="background" src="images/background.jpg" alt=""> -->
+        <img id="mario" src="images/mario.png" alt="" style="display: none">
+
         <img id="cloud" src="images/r-mario/cloud.png" alt="" style="display: none">
         <img id="fireball" src="images/r-mario/fireball.png" alt="" style="display: none">
         <img id="flower" src="images/r-mario/flower.png" alt="" style="display: none">
@@ -48,17 +49,33 @@
         <img id="mushroomRed" src="images/r-mario/mushroomRed.png" alt="" style="display: none">
         <img id="questionBlock" src="images/r-mario/questionBlock.png" alt="" style="display: none">
         <img id="star" src="images/r-mario/star.png" alt="" style="display: none">
+
+        <div id="front-icons">
+            <img src="images/r-mario/cloud.png" alt="">
+            <img src="images/r-mario/fireball.png" alt="">
+            <img src="images/r-mario/flower.png" alt="">
+            <img src="images/r-mario/mushroomGreen.png" alt="">
+            <img src="images/r-mario/mushroomRed.png" alt="">
+            <img src="images/r-mario/questionBlock.png" alt="">
+            <img src="images/r-mario/star.png" alt="" >
+        </div>
         
     
-        <button type="button" id="startBtn" onclick="initialize()">START</button>
+        <!-- <button id="startBtn" onclick="initialize()">START</button> -->
+        <div class="buttons">
+            <button id="startBtn" onclick="setJS('basicGame.js')">START</button>
+            <button id="timeBtn" onclick="setJS('timeTrial.js')">TIME TRIAL</button>
+
+        </div>
         
         <audio src="sounds/coin.wav" id="coinSound"></audio>
         <audio src="sounds/bgm.wav" id="bgm"></audio>
         <audio src="sounds/bad.wav" id="badSound"></audio>
         <audio src="sounds/press_start.wav" id="pressStart"></audio>
         <audio src="sounds/here_we_go.wav" id="hereWeGo"></audio>
+        <audio src="sounds/gameover.wav" id="gameover"></audio>
     </div>
 
-    <script type="text/javascript" src="game.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

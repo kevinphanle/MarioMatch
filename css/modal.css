@@ -1,6 +1,13 @@
 #modalBtn {
     font-size: 20px;
     background-color: #FDD000;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+#modalBtn:hover {
+  transform: scale(1.2, 1.2);
+
 }
 
 .modal {
@@ -32,13 +39,15 @@
   
   .modal-header {
       width: 100%;
+      padding: 0 20px;
+
       display: flex;
       justify-content: space-between;
   }
 
   .modal-body {
       padding: 10px 16px;
-      text-align: center;
+      /* text-align: center; */
   }
 
   /* The Close Button */
