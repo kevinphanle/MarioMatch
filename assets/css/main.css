@@ -9,7 +9,7 @@ html {
 body {
     background-color: whitesmoke;
 
-    background-image: url("../images/background.jpg");
+    background-image: url("../../lib/images/background.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -20,7 +20,7 @@ body {
     /* height: 70vh; */
 }
 
-#gemquest {
+#mariomatch {
     background-color: #F7FFF7;
     border-radius: 3px;
     /* z-index: 5; */
@@ -155,5 +155,17 @@ body {
 #front-icons img {
     width: 40px;
     height: 40px;
+    padding: 5px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    font-size: 30px;
+    color: #F7FFF7;
     padding: 5px;
 }
