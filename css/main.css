@@ -1,0 +1,98 @@
+@import "./reset.css";
+@import "./modal.css";
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: whitesmoke;
+
+    background-image: url("../images/background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* height: 70vh; */
+}
+
+#gemquest {
+    background-color: #F7FFF7;
+    border-radius: 3px;
+    /* z-index: 5; */
+}
+
+#startBtn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #009DDB;
+    color: white;
+    border-radius: 2px;
+    border-style: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+
+#startBtn:hover {
+    transform: scale(1.2, 1.2);
+}
+  
+#startBtn:hover,
+#startBtn:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #009DDB;
+  transform: translateY(-0.25em);
+}
+
+
+#background {
+    width: 100%;
+}
+
+#title {
+    width: 100%;
+    font-size: 80px;
+    margin: auto;
+    text-align: center;
+    /* padding-bottom: 10px; */
+}
+
+.options {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#mute {
+    /* position: absolute; */
+    top: 40%;
+    margin-left: 50px;
+    width: 59px;
+    height: 59px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #42B132;
+    
+}
+
+#mute:focus {
+    outline: none;
+}
+
+#mute img {
+    width: 100%;
+    height: auto;
+}

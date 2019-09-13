@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>GemQuest</title>
+</head>
+<body>
+    <div class="game" onload="pressStart.play()">
+        <h1 id="title"><img src="images/title.png" alt="super-mario-font" border="0"></h1>
+
+        <div class="options">
+            <button id="mute">
+                <img id ="volumeImg" src="images/volume.png"/>
+            </button>
+            <button id="modalBtn">
+                How To Play
+            </button>
+
+        </div>
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="./images/howtoplay.png" alt="">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p>Swap 2 gems sitting side-by-side to create 3, 4, or 5 gems in a row of the same color.</p>
+                    <p>Vertically, horizontally, but never diagonally.</p>
+                    <p>Every move has to make a match.</p>
+                    <p>Clear gems to advance.</p>
+                    <p>When you run out of moves, the game is over.</p>
+                </div>
+            </div>
+        </div>
+
+        <canvas id="gemquest" width="600" height="700"></canvas>
+    
+        <!-- <img id="background" src="images/background.jpg" alt=""> -->
+        <img id="cloud" src="images/r-mario/cloud.png" alt="" style="display: none">
+        <img id="fireball" src="images/r-mario/fireball.png" alt="" style="display: none">
+        <img id="flower" src="images/r-mario/flower.png" alt="" style="display: none">
+        <img id="mushroomGreen" src="images/r-mario/mushroomGreen.png" alt="" style="display: none">
+        <img id="mushroomRed" src="images/r-mario/mushroomRed.png" alt="" style="display: none">
+        <img id="questionBlock" src="images/r-mario/questionBlock.png" alt="" style="display: none">
+        <img id="star" src="images/r-mario/star.png" alt="" style="display: none">
+        
+    
+        <button type="button" id="startBtn" onclick="initialize()">START</button>
+        
+        <audio src="sounds/coin.wav" id="coinSound"></audio>
+        <audio src="sounds/bgm.wav" id="bgm"></audio>
+        <audio src="sounds/bad.wav" id="badSound"></audio>
+        <audio src="sounds/press_start.wav" id="pressStart"></audio>
+        <audio src="sounds/here_we_go.wav" id="hereWeGo"></audio>
+    </div>
+
+    <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
