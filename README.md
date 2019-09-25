@@ -31,19 +31,6 @@ Upon finishing one of the games, the user will be presented a game over screen w
 
 <img src="./assets/screenshots/gameover.png"/>
 
-## Implementation
-
-### Phase 1
-
-Study up on HTML5 Canvas, get basic grid and gem sprites up.
-
-### Phase 2
-
-Focus of the logic to move gems and match. Start building a score feature. 
-
-### Phase 3
-
-Polish sprites and game. 
 
 ## Future Features
 
