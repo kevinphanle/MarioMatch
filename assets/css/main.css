@@ -26,6 +26,10 @@ body {
     /* z-index: 5; */
 }
 
+#mario {
+    border: 1px solid red;
+}
+
 .buttons {
     position: absolute;
     top: 70%;
@@ -37,10 +41,6 @@ body {
 }
 
 #startBtn {
-    /* position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-left: -100px; */
     width: 200px;
     height: 50px;
     font-size: 20px;
@@ -55,6 +55,8 @@ body {
     letter-spacing: 1px;
 
 }
+
+
 #timeBtn {
     /* position: absolute;
     top: 85%;
@@ -77,6 +79,7 @@ body {
 
 #startBtn:hover {
     transform: scale(1.2, 1.2);
+    transition: transform .5s;
 }
   
 #startBtn:hover,

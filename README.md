@@ -27,31 +27,48 @@ Background music will begin playing, but the user has the option to mute it by c
 
 <img src="./assets/screenshots/scoretimetrial.png"/>
 
+Here is the fall animation code
+
+```
+
+function fall() {
+    for (var x = 0; x < 10; x++) {
+        for (var y = 9, z = 9; y >= 0; y-- , z--) {
+            while (z >= 0) {
+                if (gems[x][z].remove) {
+                    z--;
+                } else {
+                    break;
+                }
+            }
+
+            if (y !== z) {
+                var colorNum = (z >= 0) ? gems[x][z].color : getRandomNum(7);
+                gems[x][y].moveGem(x, z, colorNum);
+            }
+        }
+    }
+
+    // Update remove flag and add score & play sound
+    let soundFlag = true
+    for (var x = 0; x < 10; x++) {
+        for (var y = 0; y < 10; y++) {
+            if (gems[x][y].remove) {
+                gems[x][y].remove = false;
+                score += 100;
+                if (soundFlag) {
+                    coinSound.pause();
+                    coinSound.currentTime = 0;
+                    coinSound.play();
+                    coinSoundFlag = false;
+                }
+            }
+        }
+    }
+}
+```
+
 Upon finishing one of the games, the user will be presented a game over screen where their final score is displayed.
 
 <img src="./assets/screenshots/gameover.png"/>
 
-## Implementation
-
-### Phase 1
-
-Study up on HTML5 Canvas, get basic grid and gem sprites up.
-
-### Phase 2
-
-Focus of the logic to move gems and match. Start building a score feature. 
-
-### Phase 3
-
-Polish sprites and game. 
-
-## Future Features
-
-* Limit moves to deny invalid moves
-* Timer bar
-* Score multipliers
-* Bomb gems
-* Streaks
-* Levels
-* Item usage
-* Scoreboard
