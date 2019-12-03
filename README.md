@@ -6,6 +6,7 @@ Mario Match is a Bejeweled inspired game. Play it [here](https://kevinphanle.git
 
 * Javascript
 * HTML5 Canvas
+* CSS3
 
 ## Controls
 
