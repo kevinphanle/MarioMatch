@@ -8,11 +8,11 @@ html {
 
 body {
     background-color: whitesmoke;
-
-    background-image: url("../../lib/images/background.jpg");
+    background: url("../../lib/images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    
     /* height: 70vh; */
 }
 
@@ -26,18 +26,20 @@ body {
 }
 
 #mariomatch {
-    background-color: #F7FFF7;
+    /* background-color: #F7FFF7; */
     border-radius: 3px;
     /* z-index: 5; */
+    background: white;
 }
 
 #mario {
-    border: 1px solid red;
+    margin: auto;    
+    
 }
 
 .buttons {
     position: absolute;
-    top: 80%;
+    top: 72%;
     left: 50%;
     margin-left: -100px;
     display: flex;
@@ -103,6 +105,14 @@ body {
   transform: translateY(-0.25em);
 }
 
+#startBtn:focus,
+#timeBtn:focus {
+    outline: none;
+    background-color: #FDD000;
+    color: black;
+    transform: scale(1.2);
+}
+
 
 #background {
     width: 100%;
@@ -140,7 +150,7 @@ body {
 
 }
 
-#mute:focus {
+#mute:focus, #modalBtn:focus {
     outline: none;
 }
 
@@ -155,7 +165,7 @@ body {
 
 #front-icons {
     position: absolute;
-    top: 67%;
+    top: 60%;
     left: 50%;
     margin-left: -190px;
 }
