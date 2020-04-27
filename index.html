@@ -17,14 +17,13 @@
             <button id="mute">
                 <img id ="volumeImg" src="./lib/images/volume.png"/>
             </button>
-            <button id="modalBtn">
+            <!-- <button id="modalBtn">
                 How To Play
-            </button>
+            </button> -->
 
         </div>
 
-        <div id="myModal" class="modal">
-            <!-- Modal content -->
+        <!-- <div id="myModal" class="modal">
             <div class="modal-content">
                 <div class="modal-header">
                     <img src="./lib/images/howtoplay.png" alt="">
@@ -37,9 +36,17 @@
                     <p>When you run out of moves, the game is over.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <canvas id="mariomatch" width="600" height="700"></canvas>
+        <div class="main">
+            <div class="rules">
+                <p>Click and swipe to swap.</p>
+                <p>Swap 2 gems sitting side-by-side to create 3, 4, or 5 gems in a row of the same color.</p>
+                <p>Every move has to make a match.</p>
+                <p>When you run out of moves, the game is over.</p>
+            </div>
+            <canvas id="mariomatch" width="600" height="700"></canvas>
+        </div>
     
         <img id="mario" src="./lib/images/Retro-Mario-2-icon.png" alt="" style="display: none">
 
@@ -66,7 +73,6 @@
         <div class="buttons">
             <button id="startBtn" onclick="setJS('basicGame.js')">START</button>
             <button id="timeBtn" onclick="setJS('timeTrial.js')">TIME TRIAL</button>
-
         </div>
         
         <audio src="./lib/sounds/coin.wav" id="coinSound"></audio>
@@ -75,22 +81,23 @@
         <audio src="./lib/sounds/press_start.wav" id="pressStart"></audio>
         <audio src="./lib/sounds/here_we_go.wav" id="hereWeGo"></audio>
         <audio src="./lib/sounds/gameover.wav" id="gameover"></audio>
-
     </div>
-            <footer>
-                <a target="_blank" href="https://github.com/kevinphanle/MarioMatch">
-                    <img src="./lib/images/icons/github-logo.png" alt="">
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/kevin-le-b28887158/">
-                    <img src="./lib/images/icons/linkedin.png" alt="">
-                </a>
-                <a target="_blank" href="https://www.facebook.com/kevinphanle?ref=bookmarks">
-                    <img src="./lib/images/icons/facebook.png" alt="">
-                </a>
-                <a target="_blank" href="https://kevinphanle.dev/">
-                    <img src="./lib/images/icons/user.png" alt="">
-                </a>
-            </footer>
+
+
+    <footer>
+        <a target="_blank" href="https://github.com/kevinphanle/MarioMatch">
+            <img src="./lib/images/icons/github-logo.png" alt="">
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/kevin-le-b28887158/">
+            <img src="./lib/images/icons/linkedin.png" alt="">
+        </a>
+        <a target="_blank" href="https://www.facebook.com/kevinphanle?ref=bookmarks">
+            <img src="./lib/images/icons/facebook.png" alt="">
+        </a>
+        <a target="_blank" href="https://kevinphanle.dev/">
+            <img src="./lib/images/icons/user.png" alt="">
+        </a>
+    </footer>
 
     <script type="text/javascript" src="./lib/common.js"></script>
 </body>
