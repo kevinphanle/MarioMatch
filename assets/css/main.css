@@ -37,6 +37,27 @@ body {
     
 }
 
+.main {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.rules {
+    background: white;
+    width: 300px;
+    border: 1px solid red;
+    margin-right: 20px;
+}
+
+.rules h1 {
+    font-size: 40px;
+}
+
+.rules p {
+    font-size: 25px;
+}
+
 .buttons {
     /* position: absolute;
     top: 72%;
