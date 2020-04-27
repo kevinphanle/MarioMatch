@@ -29,7 +29,7 @@ body {
     /* background-color: #F7FFF7; */
     border-radius: 3px;
     /* z-index: 5; */
-    background: white;
+    background: whitesmoke;
 }
 
 #mario {
@@ -38,13 +38,14 @@ body {
 }
 
 .buttons {
-    position: absolute;
+    /* position: absolute;
     top: 72%;
     left: 50%;
     margin-left: -100px;
     display: flex;
     flex-direction: column;
-    align-items: space-between;
+    align-items: space-between; */
+    margin-top: 40px;
 }
 
 #startBtn {
@@ -87,22 +88,25 @@ body {
 #startBtn:hover {
     transform: scale(1.2, 1.2);
     transition: transform .5s;
+    cursor: pointer;
 }
   
 #startBtn:hover,
 #startBtn:focus {
   box-shadow: 0 0.5em 0.5em -0.4em #009DDB;
-  transform: translateY(-0.25em);
+  transform: translateY(-0.15em);
 }
 
 #timeBtn:hover {
     transform: scale(1.2, 1.2);
+    cursor: pointer;
+    transition: all .5s;
 }
   
 #timeBtn:hover,
 #timeBtn:focus {
   box-shadow: 0 0.5em 0.5em -0.4em #42B132;
-  transform: translateY(-0.25em);
+  transform: translateY(-0.15em);
 }
 
 #startBtn:focus,
@@ -186,4 +190,8 @@ footer a {
     font-size: 30px;
     color: #F7FFF7;
     padding: 5px;
+}
+
+footer a:hover {
+    border: 1px solid black;
 }
