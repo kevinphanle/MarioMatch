@@ -13,35 +13,30 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /* height: 70vh; */
+    /* height: 100vh; */
 }
 
-.game {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.wrapper {
     height: 100%;
+    width: 100%;
+    margin: 100px auto;
+    text-align: center;
 }
 
 #mariomatch {
-    /* background-color: #F7FFF7; */
     border-radius: 3px;
-    /* z-index: 5; */
     background: whitesmoke;
 }
 
 #mario {
     margin: auto;    
-    
+    width: 100%;
 }
 
 .main {
-    width: 80%;
+    width: fit-content;
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     justify-content: center;
     margin: auto;
 }
@@ -145,7 +140,6 @@ body {
 
 #mute {
     position: absolute;
-    /* top: 40%; */
     right: 20px;
     bottom: 20px;
     margin-left: 50px;
@@ -193,14 +187,17 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
 
 footer a {
     font-size: 30px;
     color: #F7FFF7;
     padding: 5px;
+    width: 30px;
+    height: 30px;
 }
 
 footer a:hover {
-    border: 1px solid black;
+    border: 2px solid black;
 }

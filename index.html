@@ -10,76 +10,80 @@
     <title>Mario Match</title>
 </head>
 <body onload="setBgImg()">
-    <div class="game" >
-        <h1 id="title"><img src="./lib/images/title.png" alt="super-mario-font" border="0"></h1>
 
-
-        <div class="main">
-            <div class="rules">
-                <button id="mute">
-                    <img id ="volumeImg" src="./lib/images/volume.png"/>
-                </button>
-                <img id="howtoplayImg" src="./lib/images/howtoplay.png" alt="">
-                <p>Click and swipe to swap.</p><br>
-                <p>Swap 2 gems sitting side-by-side to create 3, 4, or 5 gems in a row of the same color.</p><br>
-                <p>Every move has to make a match.</p><br>
-                <p>When you run out of moves, the game is over.</p>
-
-                <div class="buttons">
-                    <button id="startBtn" onclick="setJS('basicGame.js')">START</button>
-                    <button id="timeBtn" onclick="setJS('timeTrial.js')">TIME TRIAL</button>
+    <div class="wrapper">
+        <div class="game" >
+            <h1 id="title"><img src="./lib/images/title.png" alt="super-mario-font" border="0"></h1>
+    
+    
+            <div class="main">
+                <div class="rules">
+                    <button id="mute">
+                        <img id ="volumeImg" src="./lib/images/volume.png"/>
+                    </button>
+                    <img id="howtoplayImg" src="./lib/images/howtoplay.png" alt="">
+                    <p>Click and swipe to swap.</p><br>
+                    <p>Swap 2 gems sitting side-by-side to create 3, 4, or 5 gems in a row of the same color.</p><br>
+                    <p>Every move has to make a match.</p><br>
+                    <p>When you run out of moves, the game is over.</p>
+    
+                    <div class="buttons">
+                        <button id="startBtn" onclick="setJS('basicGame.js')">START</button>
+                        <button id="timeBtn" onclick="setJS('timeTrial.js')">TIME TRIAL</button>
+                    </div>
                 </div>
+    
+                <canvas id="mariomatch" width="600" height="700">
+                </canvas>
+    
+                <!-- <div id="front-icons">
+                    <img src="./lib/images/r-mario/cloud.png" alt="">
+                    <img src="./lib/images/r-mario/fireball.png" alt="">
+                    <img src="./lib/images/r-mario/flower.png" alt="">
+                    <img src="./lib/images/r-mario/mushroomGreen.png" alt="">
+                    <img src="./lib/images/r-mario/feather.png" alt="">
+                    <img src="./lib/images/r-mario/questionBlock.png" alt="">
+                    <img src="./lib/images/r-mario/star.png" alt="" >
+                </div> -->
             </div>
-
-            <canvas id="mariomatch" width="600" height="700">
-            </canvas>
-
-            <!-- <div id="front-icons">
-                <img src="./lib/images/r-mario/cloud.png" alt="">
-                <img src="./lib/images/r-mario/fireball.png" alt="">
-                <img src="./lib/images/r-mario/flower.png" alt="">
-                <img src="./lib/images/r-mario/mushroomGreen.png" alt="">
-                <img src="./lib/images/r-mario/feather.png" alt="">
-                <img src="./lib/images/r-mario/questionBlock.png" alt="">
-                <img src="./lib/images/r-mario/star.png" alt="" >
-            </div> -->
+        
+            <img id="mario" src="./lib/images/mariomatch.png" alt="" style="display: none">
+    
+            <img id="cloud" src="./lib/images/r-mario/cloud.png" alt="" style="display: none">
+            <img id="fireball" src="./lib/images/r-mario/fireball.png" alt="" style="display: none">
+            <img id="flower" src="./lib/images/r-mario/flower.png" alt="" style="display: none">
+            <img id="mushroomGreen" src="./lib/images/r-mario/mushroomGreen.png" alt="" style="display: none">
+            <img id="feather" src="./lib/images/r-mario/feather.png" alt="" style="display: none">
+            <img id="questionBlock" src="./lib/images/r-mario/questionBlock.png" alt="" style="display: none">
+            <img id="star" src="./lib/images/r-mario/star.png" alt="" style="display: none">
+    
+    
+            <!-- --------SOUNDS---------- -->
+            <audio src="./lib/sounds/coin.wav" id="coinSound"></audio>
+            <audio src="./lib/sounds/bgm.wav" id="bgm"></audio>
+            <audio src="./lib/sounds/bad.wav" id="badSound"></audio>
+            <audio src="./lib/sounds/press_start.wav" id="pressStart"></audio>
+            <audio src="./lib/sounds/here_we_go.wav" id="hereWeGo"></audio>
+            <audio src="./lib/sounds/gameover.wav" id="gameover"></audio>
         </div>
     
-        <img id="mario" src="./lib/images/mariomatch.png" alt="" style="display: none">
+    
+        <footer>
+            <a target="_blank" href="https://github.com/kevinphanle/MarioMatch">
+                <img src="./lib/images/icons/github-logo.png" alt="">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/kevin-le-b28887158/">
+                <img src="./lib/images/icons/linkedin.png" alt="">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/kevinphanle?ref=bookmarks">
+                <img src="./lib/images/icons/facebook.png" alt="">
+            </a>
+            <a target="_blank" href="https://kevinphanle.dev/">
+                <img src="./lib/images/icons/user.png" alt="">
+            </a>
+        </footer>
 
-        <img id="cloud" src="./lib/images/r-mario/cloud.png" alt="" style="display: none">
-        <img id="fireball" src="./lib/images/r-mario/fireball.png" alt="" style="display: none">
-        <img id="flower" src="./lib/images/r-mario/flower.png" alt="" style="display: none">
-        <img id="mushroomGreen" src="./lib/images/r-mario/mushroomGreen.png" alt="" style="display: none">
-        <img id="feather" src="./lib/images/r-mario/feather.png" alt="" style="display: none">
-        <img id="questionBlock" src="./lib/images/r-mario/questionBlock.png" alt="" style="display: none">
-        <img id="star" src="./lib/images/r-mario/star.png" alt="" style="display: none">
-
-
-        <!-- --------SOUNDS---------- -->
-        <audio src="./lib/sounds/coin.wav" id="coinSound"></audio>
-        <audio src="./lib/sounds/bgm.wav" id="bgm"></audio>
-        <audio src="./lib/sounds/bad.wav" id="badSound"></audio>
-        <audio src="./lib/sounds/press_start.wav" id="pressStart"></audio>
-        <audio src="./lib/sounds/here_we_go.wav" id="hereWeGo"></audio>
-        <audio src="./lib/sounds/gameover.wav" id="gameover"></audio>
     </div>
-
-
-    <footer>
-        <a target="_blank" href="https://github.com/kevinphanle/MarioMatch">
-            <img src="./lib/images/icons/github-logo.png" alt="">
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/kevin-le-b28887158/">
-            <img src="./lib/images/icons/linkedin.png" alt="">
-        </a>
-        <a target="_blank" href="https://www.facebook.com/kevinphanle?ref=bookmarks">
-            <img src="./lib/images/icons/facebook.png" alt="">
-        </a>
-        <a target="_blank" href="https://kevinphanle.dev/">
-            <img src="./lib/images/icons/user.png" alt="">
-        </a>
-    </footer>
 
     <script type="text/javascript" src="./lib/common.js"></script>
 </body>
