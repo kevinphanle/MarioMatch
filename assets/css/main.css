@@ -8,13 +8,15 @@ html {
 
 body {
     background-color: whitesmoke;
-    background: url("../../lib/images/background.jpg") no-repeat center center fixed;
+    background: url("../../lib/images/background-dark.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     /* height: 100vh; */
 }
+
+
 
 .wrapper {
     height: 100%;
@@ -89,7 +91,30 @@ body {
     transition: all 0.3s ease-in-out;
     font-weight: 600;
     letter-spacing: 1px;
-
+}
+#resetBtn {
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+    background-color: #E71E07;
+    color: white;
+    border-radius: 2px;
+    border-style: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#resetBtn:hover {
+    transform: scale(1.2, 1.2);
+    transition: transform .5s;
+    cursor: pointer;
+}
+  
+#resetBtn:hover,
+#resetBtn:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #009DDB;
+  transform: translateY(-0.15em);
 }
 
 
@@ -118,12 +143,14 @@ body {
 }
 
 #startBtn:focus,
-#timeBtn:focus {
+#timeBtn:focus,
+#resetBtn:focus {
     outline: none;
     background-color: #FDD000;
     color: black;
     transform: scale(1.1);
 }
+
 
 
 #background {
