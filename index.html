@@ -13,43 +13,39 @@
     <div class="game" >
         <h1 id="title"><img src="./lib/images/title.png" alt="super-mario-font" border="0"></h1>
 
-        <div class="options">
-            <button id="mute">
-                <img id ="volumeImg" src="./lib/images/volume.png"/>
-            </button>
-            <!-- <button id="modalBtn">
-                How To Play
-            </button> -->
-
-        </div>
-
-        <!-- <div id="myModal" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <img src="./lib/images/howtoplay.png" alt="">
-                    <span class="close">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <p>Click and swipe to swap.</p>
-                    <p>Swap 2 gems sitting side-by-side to create 3, 4, or 5 gems in a row of the same color.</p>
-                    <p>Every move has to make a match.</p>
-                    <p>When you run out of moves, the game is over.</p>
-                </div>
-            </div>
-        </div> -->
 
         <div class="main">
             <div class="rules">
-                <h1>Rules</h1>
-                <p>Click and swipe to swap.</p>
-                <p>Swap 2 gems sitting side-by-side to create 3, 4, or 5 gems in a row of the same color.</p>
-                <p>Every move has to make a match.</p>
+                <button id="mute">
+                    <img id ="volumeImg" src="./lib/images/volume.png"/>
+                </button>
+                <img id="howtoplayImg" src="./lib/images/howtoplay.png" alt="">
+                <p>Click and swipe to swap.</p><br>
+                <p>Swap 2 gems sitting side-by-side to create 3, 4, or 5 gems in a row of the same color.</p><br>
+                <p>Every move has to make a match.</p><br>
                 <p>When you run out of moves, the game is over.</p>
+
+                <div class="buttons">
+                    <button id="startBtn" onclick="setJS('basicGame.js')">START</button>
+                    <button id="timeBtn" onclick="setJS('timeTrial.js')">TIME TRIAL</button>
+                </div>
             </div>
-            <canvas id="mariomatch" width="600" height="700"></canvas>
+
+            <canvas id="mariomatch" width="600" height="700">
+            </canvas>
+
+            <!-- <div id="front-icons">
+                <img src="./lib/images/r-mario/cloud.png" alt="">
+                <img src="./lib/images/r-mario/fireball.png" alt="">
+                <img src="./lib/images/r-mario/flower.png" alt="">
+                <img src="./lib/images/r-mario/mushroomGreen.png" alt="">
+                <img src="./lib/images/r-mario/feather.png" alt="">
+                <img src="./lib/images/r-mario/questionBlock.png" alt="">
+                <img src="./lib/images/r-mario/star.png" alt="" >
+            </div> -->
         </div>
     
-        <img id="mario" src="./lib/images/Retro-Mario-2-icon.png" alt="" style="display: none">
+        <img id="mario" src="./lib/images/mariomatch.png" alt="" style="display: none">
 
         <img id="cloud" src="./lib/images/r-mario/cloud.png" alt="" style="display: none">
         <img id="fireball" src="./lib/images/r-mario/fireball.png" alt="" style="display: none">
@@ -59,21 +55,8 @@
         <img id="questionBlock" src="./lib/images/r-mario/questionBlock.png" alt="" style="display: none">
         <img id="star" src="./lib/images/r-mario/star.png" alt="" style="display: none">
 
-        <div id="front-icons">
-            <img src="./lib/images/r-mario/cloud.png" alt="">
-            <img src="./lib/images/r-mario/fireball.png" alt="">
-            <img src="./lib/images/r-mario/flower.png" alt="">
-            <img src="./lib/images/r-mario/mushroomGreen.png" alt="">
-            <img src="./lib/images/r-mario/feather.png" alt="">
-            <img src="./lib/images/r-mario/questionBlock.png" alt="">
-            <img src="./lib/images/r-mario/star.png" alt="" >
-        </div>
-        
-        <div class="buttons">
-            <button id="startBtn" onclick="setJS('basicGame.js')">START</button>
-            <button id="timeBtn" onclick="setJS('timeTrial.js')">TIME TRIAL</button>
-        </div>
-        
+
+        <!-- --------SOUNDS---------- -->
         <audio src="./lib/sounds/coin.wav" id="coinSound"></audio>
         <audio src="./lib/sounds/bgm.wav" id="bgm"></audio>
         <audio src="./lib/sounds/bad.wav" id="badSound"></audio>

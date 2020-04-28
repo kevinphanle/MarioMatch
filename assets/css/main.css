@@ -40,18 +40,22 @@ body {
 .main {
     width: 80%;
     display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
     margin: auto;
 }
 
 .rules {
-    background: white;
+    background: whitesmoke;
     width: 300px;
-    border: 1px solid red;
     margin-right: 20px;
+    padding: 20px;
+    position: relative;
 }
 
-.rules h1 {
-    font-size: 40px;
+#howtoplayImg {
+    margin-bottom: 20px;
 }
 
 .rules p {
@@ -59,20 +63,13 @@ body {
 }
 
 .buttons {
-    /* position: absolute;
-    top: 72%;
-    left: 50%;
-    margin-left: -100px;
-    display: flex;
-    flex-direction: column;
-    align-items: space-between; */
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 #startBtn {
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
     background-color: #009DDB;
     color: white;
     border-radius: 2px;
@@ -82,18 +79,13 @@ body {
     margin-bottom: 30px;
     font-weight: 600;
     letter-spacing: 1px;
-
 }
 
 
 #timeBtn {
-    /* position: absolute;
-    top: 85%;
-    left: 50%;
-    margin-left: -100px; */
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
     background-color: #42B132;
     color: white;
     border-radius: 2px;
@@ -135,7 +127,7 @@ body {
     outline: none;
     background-color: #FDD000;
     color: black;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
@@ -148,24 +140,19 @@ body {
     font-size: 80px;
     margin: auto;
     text-align: center;
-    /* padding-bottom: 10px; */
 }
 
-.options {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 60%;
-}
 
 #mute {
-    /* position: absolute; */
-    top: 40%;
+    position: absolute;
+    /* top: 40%; */
+    right: 20px;
+    bottom: 20px;
     margin-left: 50px;
-    width: 59px;
-    height: 59px;
+    width: 40px;
+    height: 40px;
     font-size: 20px;
-    border-radius: 5px;
+    border-radius: 2px;
     border-style: none;
     display: flex;
     align-items: center;
@@ -181,6 +168,7 @@ body {
 
 #mute:hover {
     transform: scale(1.2, 1.2);
+    cursor: pointer;
 }
 
 #mute img {
