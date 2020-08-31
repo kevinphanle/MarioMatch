@@ -2,229 +2,226 @@
 @import "./modal.css";
 
 html {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 body {
-    background-color: whitesmoke;
-    background: url("../../lib/images/background-dark.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /* height: 100vh; */
+  background-color: whitesmoke;
+  background: url("../../lib/images/background-dark.png") no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
-
-
 .wrapper {
-    height: 100%;
-    width: 100%;
-    margin: 100px auto;
-    text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #mariomatch {
-    border-radius: 3px;
-    background: whitesmoke;
+  border-radius: 3px;
+  background: whitesmoke;
 }
 
 #mario {
-    margin: auto;    
-    width: 100%;
+  margin: auto;
+  width: 100%;
 }
 
 .main {
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
 }
 
 .rules {
-    background: whitesmoke;
-    width: 300px;
-    margin-right: 20px;
-    padding: 20px;
-    position: relative;
+  background: whitesmoke;
+  width: 300px;
+  margin-right: 20px;
+  padding: 20px;
+  position: relative;
 }
 
 #howtoplayImg {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .rules p {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .buttons {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 #startBtn {
-    width: 100%;
-    height: 80px;
-    font-size: 30px;
-    background-color: #009DDB;
-    color: white;
-    border-radius: 2px;
-    border-style: none;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: all 0.3s ease-in-out;
-    margin-bottom: 30px;
-    font-weight: 600;
-    letter-spacing: 1px;
+  width: 100%;
+  height: 80px;
+  font-size: 30px;
+  background-color: #009ddb;
+  color: white;
+  border-radius: 2px;
+  border-style: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
-
 
 #timeBtn {
-    width: 100%;
-    height: 80px;
-    font-size: 30px;
-    background-color: #42B132;
-    color: white;
-    border-radius: 2px;
-    border-style: none;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: all 0.3s ease-in-out;
-    font-weight: 600;
-    letter-spacing: 1px;
+  width: 100%;
+  height: 80px;
+  font-size: 30px;
+  background-color: #42b132;
+  color: white;
+  border-radius: 2px;
+  border-style: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 #resetBtn {
-    width: 100%;
-    height: 80px;
-    font-size: 30px;
-    background-color: #E71E07;
-    color: white;
-    border-radius: 2px;
-    border-style: none;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: all 0.3s ease-in-out;
-    font-weight: 600;
-    letter-spacing: 1px;
+  width: 100%;
+  height: 80px;
+  font-size: 30px;
+  background-color: #e71e07;
+  color: white;
+  border-radius: 2px;
+  border-style: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 #resetBtn:hover {
-    transform: scale(1.2, 1.2);
-    transition: transform .5s;
-    cursor: pointer;
+  transform: scale(1.2, 1.2);
+  transition: transform 0.5s;
+  cursor: pointer;
 }
-  
+
 #resetBtn:hover,
 #resetBtn:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em #009DDB;
+  box-shadow: 0 0.5em 0.5em -0.4em #009ddb;
   transform: translateY(-0.15em);
 }
 
-
 #startBtn:hover {
-    transform: scale(1.2, 1.2);
-    transition: transform .5s;
-    cursor: pointer;
+  transform: scale(1.2, 1.2);
+  transition: transform 0.5s;
+  cursor: pointer;
 }
-  
+
 #startBtn:hover,
 #startBtn:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em #009DDB;
+  box-shadow: 0 0.5em 0.5em -0.4em #009ddb;
   transform: translateY(-0.15em);
 }
 
 #timeBtn:hover {
-    transform: scale(1.2, 1.2);
-    cursor: pointer;
-    transition: all .5s;
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+  transition: all 0.5s;
 }
-  
+
 #timeBtn:hover,
 #timeBtn:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em #42B132;
+  box-shadow: 0 0.5em 0.5em -0.4em #42b132;
   transform: translateY(-0.15em);
 }
 
 #startBtn:focus,
 #timeBtn:focus,
 #resetBtn:focus {
-    outline: none;
-    background-color: #FDD000;
-    color: black;
-    transform: scale(1.1);
+  outline: none;
+  background-color: #fdd000;
+  color: black;
+  transform: scale(1.1);
 }
 
-
-
 #background {
-    width: 100%;
+  width: 100%;
 }
 
 #title {
-    width: 100%;
-    font-size: 80px;
-    margin: auto;
-    text-align: center;
+  width: 100%;
+  font-size: 80px;
+  margin: auto;
+  text-align: center;
 }
-
 
 #mute {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    margin-left: 50px;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    border-radius: 2px;
-    border-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #42B132;
-    transition: all 0.3s ease-in-out;
-
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  margin-left: 50px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 2px;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #42b132;
+  transition: all 0.3s ease-in-out;
 }
 
-#mute:focus, #modalBtn:focus {
-    outline: none;
+#mute:focus,
+#modalBtn:focus {
+  outline: none;
 }
 
 #mute:hover {
-    transform: scale(1.2, 1.2);
-    cursor: pointer;
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
 }
 
 #mute img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #front-icons {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    margin-left: -190px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-left: -190px;
 }
 
 #front-icons img {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
 }
 
 footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 footer a {
-    font-size: 30px;
-    color: #F7FFF7;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
+  font-size: 30px;
+  color: #f7fff7;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
 }
 
 footer a:hover {
-    border: 2px solid black;
+  border: 2px solid black;
 }
